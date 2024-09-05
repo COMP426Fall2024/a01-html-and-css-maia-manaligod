@@ -1,0 +1,41 @@
+
+body{
+    font-family: "Monaco", monospace;
+    padding: 20px;
+}
+.navigation{
+    background-color: rgb(158, 230, 177);
+}
+
+.banner{
+    background-color: pink;
+}
+
+.banner img {
+    width: 15px;
+    height: 10px;
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+.bannerImg{
+    object-fit: contain;
+}
+
+
+.horizontal{
+    display: flex; 
+}
+
+.infoBox{
+    padding: 20px;
+    width: 30%; 
+    border: 2px solid red;
+    background-color: rgb(240, 250, 211);
+    border-radius: 2px;
+    margin: 20px;
+}
+
+.infoBox:hover{
+    transform: scale(1.02); 
+}
