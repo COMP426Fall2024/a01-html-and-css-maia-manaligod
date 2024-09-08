@@ -3,14 +3,15 @@ h1, h2, h3, h4 {
     font-family: "Georgia", serif;
 }
 
-p {
+p , ul {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
 }
 
 .navigation{
     padding: 20px;
     padding-top: 30px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     margin: -10px;
     margin-bottom: 10px;
     
@@ -23,14 +24,19 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.navigation a:hover{
+    text-decoration: underline;
+    text-decoration-color: #e1af27;
+    text-decoration-thickness: 2px;
+}
+
 #currentPage {
     text-decoration: underline;
-    text-decoration-color: rgb(225, 175, 39);
+    text-decoration-color: #e1af27;
     text-decoration-thickness: 2px;
 }
 
 .banner{
-    background-color: pink;
     margin: -10px;
 }
 
@@ -54,15 +60,23 @@ p {
 
 .horizontal{
     display: flex; 
+    gap: 20px;
+}
+
+.justify {
+    justify-content: space-between;
+    align-items: center;
 }
 
 .infoBox{
     padding: 20px;
-    width: 30%; 
-    border: 2px solid red;
-    background-color: rgb(240, 250, 211);
+    width: 30%;
+    height: 150px; 
+    background-color: #faf7d3;
     border-radius: 2px;
     margin: 20px;
+    box-shadow: 3px 3px rgba(156, 156, 156, 0.659) ;
+    border: 1px solid #a25b0a
 }
 
 .infoBox:hover{
@@ -72,14 +86,18 @@ p {
 table, th, td {
     border: 1px solid;
     padding: 10px;
+    font-size: 20px;
   }
 
 .textContent{
-    padding: 30px;
+    padding: 70px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column
 }
 
 .headerBox{
-    background-color: rgb(44, 43, 47);
+    background-color: #2c2b2f;
     padding: 40px;
     margin: -10px;
     display: flex;
@@ -92,10 +110,11 @@ table, th, td {
     border: 1px solid white;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     font-size: 30px;
-    gap: 40px;
+    gap: 100px;
     width: 80%;
 }
 
@@ -104,5 +123,49 @@ table, th, td {
 }
 
 .highlight{
-    color: rgb(225, 175, 39)
+    color: #e1af27;
+}
+
+.hintBox{
+    background-color: #d2d5dd;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(57, 57, 62);
+}
+
+.hintBox p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.textContent img{
+    border: 2px solid black;
+}
+
+select{
+    height: 20px;
+    width: 500px;
+    font-size: 400px;
+}
+
+.vote {
+    background-color: #fdf5e7;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #a25b0a;
+}
+
+button {
+    height: 30px;
+    width: 90px;
+}
+
+hr.solid{
+    border: 1px solid rgb(190, 148, 74);
+    width: 80%;
+}
+
+.rightAlign{
+    display: flex;
+    text-align: end;
 }
